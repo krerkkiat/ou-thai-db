@@ -20,6 +20,7 @@ from about import views as about_views
 
 urlpatterns = [
     url(r'^$', about_views.index, name='index'),
+    url(r'^about/$', about_views.about, name='about'),
     url(r'^api/v1/', include('apiv1.urls')),
     url(r'^api-auth/', include('rest_framework.urls')),
 ]

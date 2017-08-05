@@ -1,14 +1,22 @@
-{% load static %}
+{% extends 'base.html' %}
 {% load render_bundle from webpack_loader %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>OU Thai Database</title>
-  </head>
 
-  <body>
-    <div id="root"></div>
-    {% render_bundle 'main' %}
-  </body>
-</html>
+{% block navbar %}
+<li class="active"><a href="#">Search </a></li>
+<li><a href="{% url 'about' %}">About</a></li>
+<li><a href="https://cicdatabank.library.ohiou.edu/opac/thai.php" class="navbar-link">Original Website</a></li>
+{% endblock navbar %}
+
+{% block content %}
+<div class="container">
+  <div class="page-header">
+    <h3>Search</h3>
+  </div>
+  <div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Warning!</strong> The database behind this web application is just a sample. Please use the original web site for an actual search.
+  </div>
+  <div id="root"></div>
+</div>
+{% render_bundle 'main' %}
+{% endblock content %}

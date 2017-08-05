@@ -7,7 +7,7 @@ from elasticsearch import Elasticsearch
 
 es = Elasticsearch()
 
-with open('../data/wyatt_db_online.json', 'r') as f:
+with open('./data/wyatt_db_online.json', 'r') as f:
     data = json.load(f)
 
     for entry in data:

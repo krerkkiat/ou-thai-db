@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+
+{% block navbar %}
+<li><a href="{% url 'index' %}">Search </a></li>
+<li class="active"><a href="#">About</a></li>
+<li><a href="https://cicdatabank.library.ohiou.edu/opac/thai.php" class="navbar-link">Original Website</a></li>
+{% endblock navbar %}
+
+{% block content %}
+<div class="container">
+  <div class="page-header">
+    <h3>About</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p>This is the sample web application that allows the Thai script to be used in the search term. It also configured with a proper analyzer for the field that contains Thai words in Thai script.</p>
+      <p>The original website seems to lack this functionality thus it leaves user with only the romanized script as a search term which can be hard use. To illustrate the lack of support for Thai script as a search term, you can fill in the following pharse into the title box at the original site then hit search button <code>นิธิ</code>. While the original site returns the no result found page. This web application returns resonable results for <code>นิธิ</code>. In fact any another search term that is in Thai script can be used on the original site, but the web site always returns the no result page.</p>
+      <p>This current version of the application is just a prototype. Its database contains non of the data from the original website. However, the full database of the original website can be re-indexed. This  will then enable user to search the database using the Thai script.</p>
+      <p>The data is index to <a href="https://www.elastic.co/products/elasticsearch" target="_blank">Elasticsearch</a> backend with a proper analyzer for Thai language. This Elasticsearch backend then provides the search functionaly for this web application.</p>
+    </div>
+  </div>
+  <div class="page-header">
+    <h3>About the David K. Wyatt Southeast Asia Collection &amp; Thai Database</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Please see <a href="https://cicdatabank.library.ohiou.edu/opac/thai_about.php">here</a> for the information about the database.</p>
+    </div>
+  </div>
+</div>
+{% endblock content %}

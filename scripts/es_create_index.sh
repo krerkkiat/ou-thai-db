@@ -79,7 +79,7 @@ curl -X PUT '127.0.0.1:9200/wyatt?pretty' -d \
                     "index": "false"
                 },
                 "publication_year": {
-                    "type": "integer",
+                    "type": "integer"
                 },
                 "old_database_id": {
                     "type": "keyword"
