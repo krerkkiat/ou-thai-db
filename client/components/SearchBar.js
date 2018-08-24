@@ -47,11 +47,6 @@ class SearchBar extends React.Component {
           </div>
           <div className="form-group">
             <div className="col-sm-offset-1 col-sm-11">
-              <span>More information on query syntax; please see <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax" target="_blank">here</a></span>
-              </div>
-          </div>
-          <div className="form-group">
-            <div className="col-sm-offset-1 col-sm-11">
               <button
                 className="btn btn-default"
                 type="button"
@@ -63,6 +58,11 @@ class SearchBar extends React.Component {
                 onClick={this.handleOnClearBtnClick}
               >Clear</button>
             </div>
+          </div>
+          <div className="form-group">
+            <div className="col-sm-offset-1 col-sm-11">
+              <span>More information on query syntax; please see <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax" target="_blank">here</a></span>
+              </div>
           </div>
         </form>
       </div>

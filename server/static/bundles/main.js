@@ -32934,24 +32934,6 @@ var SearchBar = function (_React$Component) {
               "div",
               { className: "col-sm-offset-1 col-sm-11" },
               _react2.default.createElement(
-                "span",
-                null,
-                "More information on query syntax; please see ",
-                _react2.default.createElement(
-                  "a",
-                  { href: "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax", target: "_blank" },
-                  "here"
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "form-group" },
-            _react2.default.createElement(
-              "div",
-              { className: "col-sm-offset-1 col-sm-11" },
-              _react2.default.createElement(
                 "button",
                 {
                   className: "btn btn-default",
@@ -32968,6 +32950,24 @@ var SearchBar = function (_React$Component) {
                   onClick: this.handleOnClearBtnClick
                 },
                 "Clear"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "form-group" },
+            _react2.default.createElement(
+              "div",
+              { className: "col-sm-offset-1 col-sm-11" },
+              _react2.default.createElement(
+                "span",
+                null,
+                "More information on query syntax; please see ",
+                _react2.default.createElement(
+                  "a",
+                  { href: "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax", target: "_blank" },
+                  "here"
+                )
               )
             )
           )
